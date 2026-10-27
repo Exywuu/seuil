@@ -57,7 +57,7 @@ npm ci
 npm run dev
 ```
 
-Le README d’origine indique un serveur de développement sur le port 8080 ; pour une production locale il propose `npm run build` puis `npm run preview`. Lors de la préparation sous Windows, `npm ci --ignore-scripts` a abouti, mais `npm run build` a échoué avec `spawn vite ENOENT` ; le lancement et la production ne sont donc pas confirmés dans cet environnement. Les dépendances et configurations de la plateforme d’origine sont conservées, mais les fichiers locaux d’environnement et le secret de prévisualisation ont été exclus de la version publique. La connexion de prévisualisation Grok n’est donc pas configurée dans cette copie.
+Le README d’origine indique un serveur de développement sur le port 8080 ; pour une production locale il propose `npm run build` puis `npm run preview`. La compilation n’a pas été confirmée dans l’environnement Windows utilisé pour la publication ; la connexion de prévisualisation Grok n’est pas configurée dans la copie publique. Voir [la maintenance technique](MAINTENANCE.md).
 
 | Dossier | Contenu |
 | --- | --- |
@@ -71,7 +71,7 @@ Le README d’origine indique un serveur de développement sur le port 8080 ; po
 
 Les fichiers `screenshots/app-builder-preview.json` et `screenshots/app-builder-built.json` consignent les vérifications produites dans l’environnement Grok : page d’accueil en **1280 × 800** et **390 × 844**, réponse HTTP 200, pas d’erreur console ou de débordement horizontal relevé dans ces captures, et pas de divergence signalée entre aperçu et production locale. Ce sont les résultats conservés du projet ; ils n’ont pas été reproduits lors de la publication. Ils ne prouvent pas à eux seuls le fonctionnement de toutes les interactions, ni une conformité d’accessibilité complète.
 
-Le site prévoit une alternative sans son et des contrôles accessibles ; aucun audit indépendant ou test sur appareils physiques n’est documenté ici. Lors de la préparation du dépôt, `npm audit --omit=dev` a signalé quatre avis concernant les dépendances, dont un classé critique. Ce résultat est un signal de l’outil : l’exploitabilité et l’impact sur ce prototype n’ont pas été évalués. Les dépendances n’ont pas été mises à jour dans cette publication. Durée exacte, consommation de tokens et coût ne sont pas connus. Le potentiel public et les besoins décrits restent des hypothèses de conception.
+Le site prévoit une alternative sans son et des contrôles accessibles ; aucun audit indépendant ou test sur appareils physiques n’est documenté ici. Les vérifications des dépendances et leur état sont détaillés dans [la maintenance technique](MAINTENANCE.md). Durée exacte, consommation de tokens et coût ne sont pas connus. Le potentiel public et les besoins décrits restent des hypothèses de conception.
 
 ## Ressources et contexte
 
