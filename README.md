@@ -1,6 +1,6 @@
 # Daybreak — Le Seuil
 
-**Prototype expérimental créé par Grok 4.7**, selon la version communiquée par le commanditaire, en réponse au brief « Live Experience 2027 — Creative Web Experience Challenge ». Le projet explore une édition anniversaire 2027 imaginée autour de Shen Yun.
+**Prototype expérimental créé par Grok 4.7**, en réponse au brief « Live Experience 2027 — Creative Web Experience Challenge ». Le projet explore une édition anniversaire 2027 imaginée autour de Shen Yun.
 
 > **Concept indépendant et non officiel. Édition anniversaire 2027 entièrement fictive.** Le Seuil n’est ni une annonce, ni un site, ni une commande de Shen Yun. Les spectacles, salles, dates, prix et réservations présentés sont inventés. Aucun achat réel n’est réalisé.
 
@@ -71,10 +71,10 @@ Le README d’origine indique un serveur de développement sur le port 8080 ; po
 
 Les fichiers `screenshots/app-builder-preview.json` et `screenshots/app-builder-built.json` consignent les vérifications produites dans l’environnement Grok : page d’accueil en **1280 × 800** et **390 × 844**, réponse HTTP 200, pas d’erreur console ou de débordement horizontal relevé dans ces captures, et pas de divergence signalée entre aperçu et production locale. Ce sont les résultats conservés du projet ; ils n’ont pas été reproduits lors de la publication. Ils ne prouvent pas à eux seuls le fonctionnement de toutes les interactions, ni une conformité d’accessibilité complète.
 
-Le site prévoit une alternative sans son et des contrôles accessibles ; aucun audit indépendant ou test sur appareils physiques n’est documenté ici. Un `npm audit --omit=dev` exécuté lors de la publication a signalé quatre vulnérabilités dans les dépendances (deux faibles, une élevée et une critique) ; elles n’ont pas été corrigées ni évaluées pour leur impact réel sur ce prototype. Durée exacte, consommation de tokens et coût ne sont pas connus. Le potentiel public et les besoins décrits restent des hypothèses de conception.
+Le site prévoit une alternative sans son et des contrôles accessibles ; aucun audit indépendant ou test sur appareils physiques n’est documenté ici. Lors de la préparation du dépôt, `npm audit --omit=dev` a signalé quatre avis concernant les dépendances, dont un classé critique. Ce résultat est un signal de l’outil : l’exploitabilité et l’impact sur ce prototype n’ont pas été évalués. Les dépendances n’ont pas été mises à jour dans cette publication. Durée exacte, consommation de tokens et coût ne sont pas connus. Le potentiel public et les besoins décrits restent des hypothèses de conception.
 
 ## Ressources et contexte
 
-Le code et les visuels du projet sont ceux trouvés dans le dossier Grok. Les captures du prototype sont conservées dans `screenshots/`. Le dépôt comporte une [licence MIT](LICENSE) fournie par son propriétaire ; les droits et licences des dépendances tierces restent ceux de leurs auteurs. Les organisations citées ne sont pas partenaires du projet. La version précise **Grok 4.7** a été fournie par le commanditaire ; elle n’a pas été déduite des fichiers.
+Le code et les visuels du projet sont ceux trouvés dans le dossier Grok. Les captures du prototype sont conservées dans `screenshots/`. Le dépôt comporte une [licence MIT](LICENSE) fournie par son propriétaire ; les droits et licences des dépendances tierces restent ceux de leurs auteurs. Les organisations citées ne sont pas partenaires du projet.
 
 Les réussites visibles sont la cohérence de la fiction, les deux parcours et l’accès direct aux informations. Les limites principales sont l’absence de validation utilisateur documentée, la dépendance au cadre technique d’origine et l’absence actuelle d’une version GitHub Pages vérifiée.
