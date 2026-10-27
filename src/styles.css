@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3ecdf;
+  --color-paper-deep: #e4d8c4;
+  --color-ink: #1a1410;
+  --color-ink-soft: #4a4038;
+  --color-cinnabar: #8e2f2a;
+  --color-gold: #8d7040;
+  --color-pine: #1e3330;
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Palatino, Georgia, serif;
+  --font-sans: Outfit, "Avenir Next", "Segoe UI", sans-serif;
+  --radius-seal: 2px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-cinnabar);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--color-cinnabar);
+    color: var(--color-paper);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+a[aria-current="page"] {
+  color: var(--color-cinnabar);
+}
+
+.sleeve-swing {
+  transform-origin: top center;
+  animation-name: sleeve-swing;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sleeve-swing {
+  0%,
+  100% {
+    transform: rotate(-6deg) scaleX(0.96);
+  }
+  50% {
+    transform: rotate(8deg) scaleX(1);
+  }
+}

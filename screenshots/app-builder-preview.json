@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Le Seuil 2027 — concept fictif, non officiel",
+      "hasCanvas": false,
+      "bodyTextLen": 1580,
+      "bodyTextHash": "17b84eec99ed0a92d01d5b4fd9555968423d2955d58ec9a90b83414157720c10",
+      "bodyTextPrefix": "Aller au contenu Concept indépendant et non officiel. Édition an",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Le Seuil 2027 — concept fictif, non officiel",
+      "hasCanvas": false,
+      "bodyTextLen": 1543,
+      "bodyTextHash": "bdb69054c214bb2be4c0c05353ec4bbaa6f9034e4ade8aca8ca8e916a1f1477a",
+      "bodyTextPrefix": "Aller au contenu Concept indépendant et non officiel. Édition an",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
